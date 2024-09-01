@@ -39,7 +39,7 @@ async fn main() {
     
     loop {
         if let Err(e) = check_satellites_over_region(lat, lng, radius).await {
-            eprintln!("Erro ao obter dados de satélites: {}", e);
+            eprintln!("Error obtaining data from satellites: {}", e);
         }
         sleep(Duration::from_secs(60)); // Wait 60 seconds before check again
     }
