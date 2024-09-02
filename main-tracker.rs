@@ -6,7 +6,7 @@ use serde::Deserialize;
 use std::time::Duration;
 use std::thread::sleep;
 
-// Structure do deserialize the API
+// Structure to deserialize the API
 #[derive(Deserialize, Debug)]
 struct Satellite {
     satname: String,
